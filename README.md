@@ -1,2 +1,2 @@
-# Responsiveness-Portfolio
-Responsiveness Homework 2
+# Responsive-Portfolio
+Responsive Homework 2
