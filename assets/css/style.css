@@ -124,12 +124,11 @@ h3 {
   .main-section {
     float: left;
     width: 100%;
-    max-width: 750px;
+    max-width: 960px;
     padding: 30px;
     background: #fff;
     border: 1px solid #ddd;
   }
-  
   /* portfolio page */
   
   .work {
@@ -173,9 +172,19 @@ h3 {
   }
   
   /* contact page */
-  
-  #contact-form ul {
+
+  .contact-section {
+    float: left;
+    width: 100%;
+    max-width: 750px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
     margin-bottom: 20px;
+  }
+
+  #contact-form ul {
+    margin-bottom:20px;
   }
   
   #contact-form li {
@@ -202,7 +211,9 @@ h3 {
   textarea {
     height: 200px;
   }
-  
+  .logobar {
+
+  }
   input[type=submit] {
     padding: 10px 30px;
     font-size: 18px;
@@ -212,23 +223,26 @@ h3 {
     border: 0 none;
     }
 
-  @media screen and (max-width: 640) {
-
-    #masthead {
+  @media screen and (max-width: 640px) {
+    .container {
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
-      flex-basis: 100%;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
+    #masthead {
+      position: static;
     }
 
-    .main-section {
+    #main-container {
+      padding-top: 0;
+    }
+    #logo {
       width: 100%;
-      max-width: 640px;
-      padding: 30px;
-      margin: 0;
-      background: #fff;
-      border: 1px solid #ddd;
-    }
-   
-  
-
- 
+        }
+    .logoform {
+      width: 100%;
+  }
+}
