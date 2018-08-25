@@ -135,12 +135,11 @@ h3 {
     position: relative;
     float: left;
     width: 274px;
-    margin: 20px 0 25px;
+    margin: 20px 20px 20px;
     overflow: auto;
   }
   
   .work:nth-child(even) {
-    margin-right: 40px;
   }
   
   .work img {
@@ -223,26 +222,53 @@ h3 {
     border: 0 none;
     }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 640px) and (min-width: 1px) {
     .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    
+    }
+    .work {
+      width: 100%;
+      max-width: 95%;
+    }
+
+    #masthead {
+      position: static;
+    }
+    #main-container {
+      padding-top: 0;
+    }
+    #logo {
+      width: 100%;
+    }
+    .logoform {
+      width: 100%;
+    } 
+  }
+
+/*  @media screen and (max-width 780) and (min-width: 641) {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .row {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       align-content: center;
       justify-content: center;
       align-items: center;
+      max-width: 100%;
+      margin-right: auto;
     }
-    #masthead {
-      position: static;
+    .work {
+      max-width: 100%;
     }
 
-    #main-container {
-      padding-top: 0;
     }
-    #logo {
-      width: 100%;
-        }
-    .logoform {
-      width: 100%;
-  }
-}
+   }
