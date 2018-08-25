@@ -140,6 +140,7 @@ h3 {
   }
   
   .work:nth-child(even) {
+    margin-right: 10px;
   }
   
   .work img {
